@@ -1,0 +1,50 @@
+.cmn-section{
+  &.-black{
+    background-color: black;
+  }
+}
+
+.cmn-title{
+  text-align: center;
+  
+  .main{
+    // display:blockでspan要素を立て並び
+    display: block;
+    font-size: 32px;
+    color: white;
+  }
+  .sub{
+    display: block;
+    color: white;
+    font-size: 20px;
+    margin-top: 34px;
+    // 頭文字だけ大文字
+    text-transform: capitalize;
+    // base.scssからインポート
+    @include TimesNewRoman;
+    @include overTab{
+      margin-top: 50px;
+    }
+    &.-faq{
+      // 全て大文字
+      text-transform: uppercase;
+      
+    }
+  }
+}
+
+// 見た目のみ。場所は別で指定
+.cmn-link{
+  a{
+    color:cl(white);
+    background-color:black;
+    // display:block;と同じ効果
+    display: flex;
+    width: 135px;
+    height: 37px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,199 @@
+.event {
+  clear: both;
+  padding: 20px 0 0;
+  position: relative;
+  padding-bottom: 30px;
+  @include overTab {
+    padding: 35px 0 0;
+    padding-bottom: 50px;
+  }
+  h1,
+  h2 {
+    letter-spacing: 0.1em;
+    color: black;
+    text-align: center;
+    font-size: 12px;
+    @include overTab {
+      font-size: 18px;
+    }
+  }
+  .event-title {
+    text-align: center;
+  }
+  h1 {
+    font-size: 40px;
+    margin-bottom: 5px;
+    display: inline-block;
+    text-align: left;
+    font-weight:bold;
+    color: rgb(8, 8, 122);
+    @include overTab {
+      font-size: 36px;
+    }
+  }
+  h2 {
+    margin-bottom: 20px;
+    font-size:18px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    @include overTab {
+      font-size: 18px;
+      margin-bottom: inherit;
+    }
+  }
+
+  img {
+    height: 40%;
+    width: 100%;
+    position: relative;
+    @include overTab {
+      height: 235px;
+      width: 100%;
+    }
+  }
+  .event-image {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-between;
+    padding: 0 10px;
+
+    @include overTab {
+      height: 350px;
+      display: flex;
+      margin-top: 20px;
+      justify-content: center;
+    }
+  }
+
+  .event-item {
+    text-align: center;
+    margin-bottom: 25px;
+    background-color: white;
+    width: 48%;
+    position: relative;
+    height: 300px;
+    transition: all 0.3s ease-out 0s;
+    box-shadow:0px 0px 6px;
+     border:0px solid white;
+    @include overTab {
+      width: 30%;
+      margin: 0 auto;
+      max-width: 400px;
+      margin: inherit;
+      height: 320px;
+    }
+    p {
+      text-align: left;
+      padding: 10px;
+      font-size: 12px;
+      overflow-wrap: break-word;
+      @include overTab {
+        font-size: 16px;
+      }
+    }
+    &:not(:last-of-type) {
+      @include overTab {
+        margin-right: 40px;
+      }
+    }
+    &:hover {
+      cursor: pointer;
+      transform: scale(0.99, 0.99);
+      filter: alpha(opacity=80);
+      -moz-opacity: 0.8;
+      -khtml-opacity: 0.8;
+      opacity: 0.8;
+    }
+
+    .ribbon17-content {
+      position: absolute;
+      top: -6px;
+      right: -6px;
+      width: 89px;
+      height: 91px;
+      overflow: hidden;
+      z-index: 30;
+    }
+
+    .ribbon17 {
+      display: inline-block;
+      position: absolute;
+      padding: 7px 0;
+      left: -23px;
+      top: 22px;
+      width: 160px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 16px;
+      background: #ffa520;
+      color: #fff;
+      letter-spacing: 0.05em;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .ribbon17:before,
+    .ribbon17:after {
+      position: absolute;
+      content: "";
+      border-top: 4px solid #b2751b;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      bottom: -4px;
+    }
+
+    .ribbon17:before {
+      left: 14px;
+    }
+
+    .ribbon17:after {
+      right: 18px;
+    }
+
+    .material, .processing, .facility{
+      position: absolute;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+      color: white;
+      letter-spacing: 0.1em;
+      font-size: 30px;
+      font-style: italic;
+      top: 40%;
+      left: 50%;
+      transform: translateY(0%) translateX(-50%);
+    }
+
+  }
+
+  .event-text {
+    width: calc(100% - 50px);
+    background: #c0ca33;
+    padding: 5px 0;
+  
+  }
+
+  .event-link {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    @include overTab {
+      padding-top: 30px;
+      padding-bottom: 5px;
+    }
+    p {
+      margin-left: auto;
+      margin-right: auto;
+      transition: all 0.3s;
+      color: black;
+      // display:block;と同じ効果
+      display: flex;
+      width: auto;
+      height: 47px;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+    }
+  }
+}

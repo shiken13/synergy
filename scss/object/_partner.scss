@@ -1,0 +1,23 @@
+.partner{
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+
+  .partner-text{
+    margin-right: 100px;
+  }
+  h1{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(8, 8, 122);
+  }
+  h2{
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+  }
+  p{
+    margin-top: 30px;
+    width: 300px;
+  }
+}

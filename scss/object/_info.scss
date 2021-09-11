@@ -1,0 +1,84 @@
+.shopInformation {
+  border-top: 0.5px solid #ffffff42;
+  // background-color: #d8d8d8;
+  background: url("../image/map4.jpg") center center no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding: 40px 0 20px;
+  .u-content-wrapper {
+    max-width: 980px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  h1,
+  h2 {
+    letter-spacing: 0.1em;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    @include overTab {
+      font-size: 18px;
+    }
+  }
+  h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    display: inline-block;
+    text-align: center;
+    border-bottom: 2px solid white;
+    @include overTab {
+      font-size: 36px;
+    }
+  }
+  h2 {
+    margin-bottom: 30px;
+    font-size: 18px;
+    @include overTab {
+      font-size: 16px;
+    }
+  }
+
+  .shopInformation__contents {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 15px;
+    justify-content: center;
+    @include overTab {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 400px;
+      padding: inherit;
+    }
+  }
+
+  .map iframe {
+    width: auto;
+    height: 240px;
+    margin-bottom: 15px;
+
+    @include overTab {
+      width: 500px;
+      height: 300px;
+      padding-left: 10px;
+      margin-bottom: 0;
+    }
+  }
+
+  .shopInformation__table {
+    width: 100%;
+    border-spacing: 16px;
+    text-align: left;
+    letter-spacing: 1.5px;
+    line-height: 3.5;
+
+    @include overTab {
+      width: 45%;
+    }
+  }
+
+}

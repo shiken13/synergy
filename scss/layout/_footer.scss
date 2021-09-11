@@ -1,0 +1,36 @@
+footer {
+  background-color: #1E90FF;
+  border-top: 1px solid #ffffff2d;
+  height: 40px;
+  // padding-bottom: 70px;
+  @include overTab {
+    height: 90px;
+    // padding-bottom: 40px;
+  }
+
+  .footer-nav a {
+    font-size: 16px;
+    padding: 0 10px;
+    color: white;
+    @include overTab {
+      font-size: 25px;
+    }
+  }
+  
+  .footer-box p {
+    font-size: 20px;
+  }
+
+  .copyright p {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    @include overTab {
+      font-size: 18px;
+    }
+
+  }
+}
